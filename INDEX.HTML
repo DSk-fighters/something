@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="STYLE.CSS">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">VeNuS iNtErNaTiOnAl ScHoOl</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#campus_life">Campus Life</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#new">What's New</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="announcement">
+        <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
+            *** Feel free to ask queries on info@vis.edu.in ***
+        </marquee>
+    </div>
+    <iframe id="video" src="data:image/jpeg;base64,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"></iframe>
+    <div class="container">
+        <div class="page-header col-lg-12 col-md-12 ccol-sm-12 col-xs-12" id="contactus">
+            <h2 class="text-capitalize">Contact Us</h2>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.862487302745!2d77.55800371482208!3d12.980645890849884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3df2298861f3%3A0xca7b9f358ccade7a!2sVenus%20International%20School!5e0!3m2!1sen!2sin!4v1624269386496!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="details">
+            <img src="https://images.app.goo.gl/vf8PHPTzJrBzX16c7">
+            <h3>Principle Name: </h3>
+            <h4>Mr.Deepak sir</h4>
+            <div class="contact_1">
+                <a href="info@vis.edu.in">
+                    <h5><i class="fa fa envelope"></i>
+                        &nbsp;&nbsp;info@vis.edu.in</h5>
+                </a>
+                <a href="#">
+                    <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;schoolid</h5>
+                </a>
+                <a href="#">
+                    <h5><i class="fa fa-phone-square">
+                        </i>&nbsp;&nbsp;+91 80 2350 4358
+                        +91 80 2311 8723</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
